@@ -7,10 +7,10 @@ Dynamic environment changes with command-line query support.
 
 Код всталяем сразу после инициализации $app.
 # Тест
-В коммандной строке \vendor\bin\phpunit
+В коммандной строке: "vendor\bin\phpunit"
  //".env.testing"
 
 Обновление страницы: dd($app->environmentFile());
  //".env.local"
  
- На production будет  //".env"
+ На production будет:  //".env"
