@@ -3,7 +3,7 @@
 
 Dynamic environment changes with command-line query support.
 # Установка
-Файл по адресу: \bootstrap\app.php.
+Файл по адресу: bootstrap\app.php.
 
 Код всталяем сразу после инициализации $app.
 # Тест
