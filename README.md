@@ -12,3 +12,5 @@ Dynamic environment changes with command-line query support.
 
 Обновление страницы: dd($app->environmentFile());
  //".env.local"
+ 
+ На production будет  //".env"
