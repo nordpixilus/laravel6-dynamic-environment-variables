@@ -19,11 +19,10 @@ $app = new Illuminate\Foundation\Application(
   | Всавляем наш код
   |
  */
+$env = env('APP_ENV', windows_os() ? 'local' : '');
+$env = $env == '' ? '' : ".{$env}";
+$file = ".env{$env}";
 $app->detectEnvironment(function () use($app) {
-    $default = windows_os() ? 'local' : '';   
-    $env = env('APP_ENV', $default);
-    $env = $env == '' ? '' : ".{$env}";
-    $file = ".env{$env}";
     $app->loadEnvironmentFrom($file);
 });
 
