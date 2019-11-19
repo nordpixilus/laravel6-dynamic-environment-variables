@@ -20,7 +20,7 @@ $app = new Illuminate\Foundation\Application(
   |
  */
 $app->detectEnvironment(function () use($app) {
-    $default = strtoupper(substr(PHP_OS, 0, 3)) === 'WIN' ? 'local' : '';   
+    $default = windows_os() ? 'local' : '';   
     $env = env('APP_ENV', $default);
     $env = $env == '' ? '' : ".{$env}";
     $file = ".env{$env}";
